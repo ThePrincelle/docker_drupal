@@ -38,6 +38,18 @@ Then, go to http://localhost:8080/ to install Drupal.
 Use the last three variables in the Drupal installation.
 Keep the `MYSQL_ROOT_PASSWORD` for logging in phpmyadmin with the `root` user.
 
+## Drupal configuration
+
+The configuration is pretty simple, the one thing to check is the database configuration.
+
+Using the Drupal first installation page, you can use the following configuration:
+- Database name: `drupal`
+- Database username: `drupal_database_user`
+- Database password: `drupal_database_password`
+- Database host: `mysql`
+
+The database name, username and password are defined in the `.env` file.
+
 ## Volumes and bindings
 
 The database has a `db_data` docker volume. It means that the data will be kept even if the container is removed.
