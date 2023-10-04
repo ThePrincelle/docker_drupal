@@ -30,7 +30,7 @@ Then, go to http://localhost:8080/ to install Drupal.
 
 | Variable | Default value | Description |
 | -------- | ------------- | ----------- |
-| `MYSQL_ROOT_PASSWORD` | `root` | Password for the root user of MySQL |
+| `MYSQL_ROOT_PASSWORD` | `root_password` | Password for the root user of MySQL |
 | `MYSQL_DATABASE` | `drupal` | Name of the database |
 | `MYSQL_USER` | `drupal_database_user` | Username for the database |
 | `MYSQL_PASSWORD` | `drupal_database_password` | Password for the database |
