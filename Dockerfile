@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install \
     intl
 
+# Install mysqli extension
+RUN docker-php-ext-install mysqli
+
 # Default Apache config to /var/www/html/drupal
 ENV APACHE_DOCUMENT_ROOT /var/www/html/drupal/web
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf \
